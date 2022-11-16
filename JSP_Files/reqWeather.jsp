@@ -4,12 +4,12 @@
 -->
 
 <html>
-  <body style="background: linear-gradient(to right, rgb(20, 20, 20), rgb(100,100,100));">
+  <body style="background: linear-gradient(to right, rgb(236, 11, 199), rgb(0, 81, 255, .8));">
 
       <br/>
       <h2 style="text-align:center;
-                background-color:rgb(128, 128, 128);
-                color:white
+                background-color:rgb(255, 255, 255);
+                color:rgb(0, 0, 0)
                 "
                 >Enter a City to retrieve the Weather: </h2>
 
@@ -29,7 +29,7 @@
 
         <tr>
           <td>
-            Area ID:
+            <strong>City Name:</strong>
           </td>
           <td>
             <input style = "border: 2px inset;" name="city" type="text">
@@ -42,7 +42,16 @@
         <tr>
           <td></td>
             <td style = "float: right; margin-right: 5px;">
-              <input style = "border: 2px outset; " type="submit" value="Get Weather">
+              <input style = "
+                            color: white;
+                            border-top: 3px outset; 
+                            border-right: 3px outset; 
+                            border-bottom: 6px outset; 
+                            border-left: 6px outset; 
+                            padding: 5px;
+                            font-weight: bold;
+                            " 
+                            type="submit" value="Get Weather">
 
             </td>
         </tr>

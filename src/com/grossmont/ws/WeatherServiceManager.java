@@ -50,8 +50,8 @@ public class WeatherServiceManager{
 
             // *****************
             // UNCOMMENT THIS if you wish to print out raw json that came back from web service during testing.
-            // System.out.println("Returned json:");
-            // System.out.println(sServiceReturnJson);
+             System.out.println("Returned json:");
+             System.out.println(sServiceReturnJson);
             // *****************
 
 
@@ -106,10 +106,13 @@ public class WeatherServiceManager{
     // getLowTemp
     //   - input: nothing.
     //   - output: return the low temp as a float.
-    //
+
+    public String getCityName() { return m_oWeather.name; }
+    public float getHighTemp() { return m_oWeather.main.temp_max; }
+    public float getLowTemp() { return m_oWeather.main.temp_min; }
+
     // ###### END: YOUR CODE HERE ######
     // #################################
-
 
 
 
@@ -130,12 +133,15 @@ public class WeatherServiceManager{
 		// 2. Get user input two different times to get 2 cities.
 		// 3. IMPORTANT: Take any space in the city of user input with %20 (e.g. "san diego, california" becomes "san%20diego,california").
 		//		- To do this, simply use the replaceAll method on your city string like this:
-					sCity1 = sCity1.replaceAll(" ","%20");
+             //sCity1 = sCity1.replaceAll(" ","%20");
+
 		// 3. Call callWeatherWebService on each WeatherServiceManager instance passing in each city.
 		// 4. Then make comparisons of temps between cities on each WeatherServiceManager instance by using the get methods created above:
 		//		- Print out which city has the HIGHEST CURRENT TEMP (NOTE: you can get city name from your m_oWeather.
 		// 		- Print out which city has the GREATEST RANGE between low and high.
 		// ###### END: YOUR CODE HERE ######
+
+
     }
 
 
