@@ -17,7 +17,7 @@ public class WeatherServiceManager{
 
     private Weather m_oWeather = null;
 
-    private String m_sWeatherJson;
+    private String m_sWeatherJson; //holds returned json from api
 
 
 
@@ -50,8 +50,8 @@ public class WeatherServiceManager{
 
             // *****************
             // UNCOMMENT THIS if you wish to print out raw json that came back from web service during testing.
-             System.out.println("Returned json:");
-             System.out.println(sServiceReturnJson);
+//             System.out.println("Returned json:");
+//             System.out.println(sServiceReturnJson);
             // *****************
 
 
@@ -123,7 +123,7 @@ public class WeatherServiceManager{
     // you make an adjustment to your class.
     // Also, it's handy to use the System.out.println tool to print out values
     // to the console when testing or use break points and run in debug mode.
-    public static void main(String[] args){
+   // public static void main(String[] args){
 
 		// If you are NOT incorporating these classes into Tomcat, then do the following for the lab:
 
@@ -142,7 +142,7 @@ public class WeatherServiceManager{
 		// ###### END: YOUR CODE HERE ######
 
 
-    }
+   // }
 
 
 

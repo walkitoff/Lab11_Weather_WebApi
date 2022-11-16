@@ -1,15 +1,16 @@
 <!--
 	reqWeather.jsp:  Text input for a CITY and a submit button that submits to a second JSP.
-	resultWeather.jsp:  calls java classes and displays results form weather api
+	resultWeather.jsp:  calls java classes and displays results from weather api
 -->
 
 <html>
   <body style="background: linear-gradient(to right, rgb(236, 11, 199), rgb(0, 81, 255, .8));">
 
-      <br/>
+      <br>
       <h2 style="text-align:center;
                 background-color:rgb(255, 255, 255);
-                color:rgb(0, 0, 0)
+                color:rgb(0, 0, 0);
+                
                 "
                 >Enter a City to retrieve the Weather: </h2>
 
@@ -43,15 +44,13 @@
           <td></td>
             <td style = "float: right; margin-right: 5px;">
               <input style = "
-                            color: white;
-                            border-top: 3px outset; 
-                            border-right: 3px outset; 
-                            border-bottom: 6px outset; 
-                            border-left: 6px outset; 
-                            padding: 5px;
+                            cursor: pointer;
+                            border: 3px outset; 
+                            border-radius: 5px;
+                            padding: 3px;
                             font-weight: bold;
                             " 
-                            type="submit" value="Get Weather">
+                          type="submit" value="Get Weather">  
 
             </td>
         </tr>
