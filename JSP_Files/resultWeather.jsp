@@ -37,6 +37,7 @@
             oCity.callWeatherWebService(trunc_sCity);
 
             //get current temp, high , low
+            String sName = oCity.getCityName();
             float fCurrTemp = oCity.getCurrentTemp();
             float fHighTemp = oCity.getHighTemp();
             float fLowTemp = oCity.getLowTemp();
@@ -73,7 +74,7 @@
                 font-size: 60px;
                 text-shadow: -3px 3px 5px black;    
             "
-        ><%=sCity.toUpperCase()%> <br>WEATHER</div>
+        ><%=sName.toUpperCase()%> <br>WEATHER</div>
         <br><br>
         <table style="
                 color: white;
